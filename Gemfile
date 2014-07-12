@@ -5,6 +5,7 @@ source "http://rubygems.org"
 
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
+gem 'mongoid', "~> 3.1.5"
 gem 'locomotive_plugins', github: 'colibri-software/locomotive_plugins'
 
 group :development do
