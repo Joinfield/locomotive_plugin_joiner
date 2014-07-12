@@ -1,4 +1,4 @@
-module Jegex
+module Filters
 
   def regex(input, r)
     my_match = /#{r}/.match(input)
@@ -10,11 +10,19 @@ module Jegex
     ""
   end
 
+  def add_http(input)
+    if input.start_with?('http://')
+      input
+    else
+      "http://#{input}"
+    end
+  end
+
 end
 
 class LocomotivePluginJoiner
   include Locomotive::Plugin
   def self.liquid_filters
-    Jegex
+    Filters
   end
 end
