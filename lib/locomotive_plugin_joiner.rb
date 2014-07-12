@@ -20,14 +20,20 @@ module Filters
 
 end
 
-class LocomotivePluginJoiner
-  include Locomotive::Plugin
+module LocomotivePluginJoiner
+  class LocomotivePluginJoiner
+    include Locomotive::Plugin
+    
+    def self.default_plugin_id
+      'joiner'
+    end
   
-  def self.plugin_loaded
-      puts "joiner plugin LOADED :D :D :D"
-  end
+    def self.plugin_loaded
+        puts "joiner plugin LOADED :D :D :D"
+    end
 
-  def self.liquid_filters
-    Filters
+    def self.liquid_filters
+      Filters
+    end
   end
 end
