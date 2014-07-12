@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/Joinfield/locomotive_plugins.git
-  revision: 62dc0c331a6fd7c888b745cbce8ec01ddb5b0f3e
+  revision: a3dd49a594c78376e884f9093515abfdf7a76fd9
   specs:
-    locomotive_plugins (1.0.4)
+    locomotive_plugins (1.0.6)
       bson_ext
       haml (~> 4.0)
       locomotive_liquid (~> 2.4)
