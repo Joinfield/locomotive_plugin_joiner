@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/locomotive_plugin_joiner.rb",
+    "locomotive_plugin_joiner.gemspec",
     "test/helper.rb",
     "test/test_locomotive_plugin_joiner.rb"
   ]
