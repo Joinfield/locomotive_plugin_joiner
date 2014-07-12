@@ -22,6 +22,11 @@ end
 
 class LocomotivePluginJoiner
   include Locomotive::Plugin
+  
+  def self.plugin_loaded
+      puts "joiner plugin LOADED :D :D :D"
+  end
+
   def self.liquid_filters
     Filters
   end
